@@ -1,0 +1,493 @@
+@font-face {
+    font-family: myGothamFont;
+    src: url(../font/1746-font.woff);
+}
+.element::-webkit-scrollbar { width: 0 !important }
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+html{
+    scroll-snap-type: y mandatory;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+::-webkit-scrollbar {
+    width: 0;  /* Remove scrollbar space */
+}
+
+/* 56.8  */
+h1,h2,h3{
+    padding: 2vw 2vh;
+    margin: 2vw 2vh;
+}
+/* for all */
+.clr{
+    clear: both;
+}
+.btn{
+    color: #EEEEF0;
+    background: transparent;
+    border-radius: 10px;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    padding-top: 0.4rem;
+    padding-bottom: 0.4rem;
+}
+a{
+    text-decoration: none;
+}
+.btn:hover{
+    background: #3a4153;
+}
+#project{
+    font-family: myGothamFont;
+    scroll-snap-type: mandatory;
+    scroll-snap-type: y mandatory;
+}
+.container{
+    height: 100vh;
+    scroll-snap-align: start;
+}
+#first-page{
+    background: url('/tesla-img/model3-car.jfif') no-repeat center center/cover;
+}
+.plus-btn{
+    color: black;
+    border-radius: 50%;
+    border: 3px solid black;
+    padding: 6px 11px;
+    font-size: 18px;
+    line-height: 21px;
+    background: white;
+}
+.plus-btn:hover{
+    cursor: pointer ;
+    color: white;
+    background: black;
+}
+
+/* private */
+header{
+    position: sticky;
+    top: 0;
+    padding: 0vh;
+    padding-left: 54px;
+    width: 100%;
+}
+.tesla-icon{
+    padding-top: 20px;
+    float: left;
+    width:145px;
+    height: 100%;
+}
+.tesla-icon-2{
+    padding-top: 20px;
+    position: sticky;
+    top: 0;
+    width:145px;
+    height: 100%;
+    margin-left: 3%;
+}
+.top-nav ul li{
+    display: inline-block;
+}
+
+.top-nav{
+    padding-top:18px;
+    padding-bottom:18px;
+    display: inline-block;
+    margin:0 auto;
+    margin-left: 18%;
+}
+.top-nav ul{
+    list-style-type: none;
+}
+.top-nav ul li a{
+    font-size: 16px;
+    line-height: 21px;
+    font-weight: 500;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.side-nav{
+    padding-top:18px;
+    padding-bottom:18px;
+    display: inline-block;
+    /* float: right; */
+    margin-left: 7%;
+}
+.side-nav ul{
+    list-style-type: none;
+}
+.side-nav ul li{
+    display: inline-block;
+        
+}
+.side-nav ul li a{
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 500;
+}
+.model3{
+    text-align: center;
+    color: white;
+    padding-top: 0px;
+    margin-top: -25px;
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 48px;
+}
+.model3 h3{
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+/*  */
+.side-bar{
+    padding-left: 0px;
+    position: fixed;
+    height: 100vh;
+    margin: 30vh 0;
+    margin-left: 10px;
+    width:1%;
+}
+.side-bar .current-text{
+    font-size: 0px;
+}
+ .side-bar:hover{
+    width: 4%;
+} 
+.side-bar ul{
+    list-style-type: none;    
+}
+.side-bar li{
+    margin-bottom: 10px;
+    line-height: 21px;
+}
+.side-bar a{ 
+    border-left: 2px solid black;
+    font-size: 20px;
+}
+
+.side-bar-link:hover .current-text{
+    font-size: 10px;
+    font-weight: 0;
+    color: black;
+    cursor: pointer;
+}
+
+/*  */
+#current{
+    border-left: 4px solid rgb(37, 35, 35);
+    font-size: 20px;
+    font-weight: 999;
+}
+.current-text{
+    padding-left: 5px;
+    font-size: 12px;
+    color: transparent;
+}
+
+.blankspace{    
+    height: 430px;
+}
+footer{
+    text-align: center;
+}
+
+.zero-to-hundered{
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    width: 15%;
+    color:white;
+}
+.speedo-meter{
+    display: inline-block;
+    padding-top: 10px;
+}
+
+.zero-to-hundered .seconds{
+    display: inline-block;
+    font-size: 32px;
+    line-height: 36px;
+    color: white;
+    position: absolute;
+    top: 25%;
+    margin-left: 8px;
+    padding-left: 0;
+    padding-top: 0;
+}
+
+.miles{
+    position: relative;
+    width: 10%;
+}
+.footer-element{
+    display: inline-block;
+    color: white;
+    margin-top: 0;
+    width: 15%;
+    text-align: center;
+}
+.miles .miles353{
+    padding: 0;
+    margin: 0;
+    font-size: 32px;
+    line-height: 36px;
+}
+
+.zero-to-hundered p{
+    margin-left: 15%;
+}
+.footer-p{
+    font-size: 10px;
+    margin-top: 8px;
+}
+.awd .awd-p{
+    padding: 0;
+    margin: 0;
+    font-size: 32px;
+    line-height: 36px;
+}
+.order-now{
+    display: inline-block;
+}
+.order-now-btn{
+    background-color: transparent;
+    color: white;
+    border-radius: 20px;
+    font-size: 12px;
+    line-height: 14px;
+    font-weight: 500;
+    padding:7px 34px;
+    border: 3px solid white;
+    position: relative;
+    top: -25px;
+    margin-left: 20px;
+}
+.order-now-btn:hover{
+    background: white;
+    color: black;
+    cursor: pointer;
+}
+.order-now-btn-dark{
+    border-radius: 20px;
+    font-size: 12px;
+    line-height: 14px;
+    font-weight: 700;
+    padding:10px 28px;
+    border: 3px solid black;
+    color: black;
+    background-color: transparent;
+}
+.order-now-btn-dark:hover{
+    background:black;
+    cursor: pointer;
+    color: white;
+}
+.awd{
+    width: 8%;
+}
+.arrow{
+    color: white;
+    font-size: 25px;
+
+}
+.arrow-div{
+    margin-top: 20px;
+}
+.second-page-container{
+    background: #F5F5F5;
+    height: 100vh;   
+    /* scroll-snap-align: start; */ 
+}
+.chat{
+    background: white;
+    border-radius: 50%;
+    padding: 10px 13px;
+    padding-top: 13px;
+    cursor: pointer;
+    font-size: 20px;
+    position: fixed;
+    bottom: 80px;
+    right: 50px;
+    border: 0px;
+}
+.safety{
+
+    min-height: 100%;
+    width: 70%;
+    margin-left : 20%;
+    background: url('/tesla-img/model3-screen-shot.PNG') no-repeat center center/cover;
+    
+}
+.second-page-container{
+    color: #181b21; 
+}
+.safety-explain{
+    float: left;
+    max-width: 28%;
+    background: white;
+    color: black;
+    min-height: 100vh;
+    padding:0 50px;
+    padding-top: 3%;
+}
+.safety-explain h3{
+    padding: 0;
+    margin-top: 0;
+    margin-left: 0;
+    font-size: 28px;
+    line-height: 36px;
+    font-weight: 500;
+}
+.safety-explain .first-line{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-bottom: 0;
+    font-size: 24px;
+    margin-bottom: 0;
+}
+.safety-explain p{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    max-width: 86%;
+    font-size: 18px;
+}
+.rating{
+    background: #E2E4E4;
+    border-radius: 15px;
+    text-align: center;
+    margin-top: 10%;
+}
+.rating h3{
+    font-size: 20px;
+    line-height: 28px;
+    padding: 20px 10px;
+    padding-bottom: 10px;
+    margin-bottom: 0;
+    font-weight: 100;
+}
+.star-rating{
+    padding-bottom: 8px;
+}
+.star-rating h3{
+    text-align: left;
+    padding: 0;
+    margin:0;
+    padding-right: 30%;
+    font-size: 14px;
+    line-height: 21px;
+    width: 60%;
+    color: #393c41;
+    display: inline-block;
+}
+/* selection */
+
+.stars{
+    display: inline-block;
+}
+.star-rating p{
+    text-align: left;
+    padding-left: 5%;
+    left: -90px;
+    font-size: 10px;
+    line-height: 8px;
+    color: #393c41;
+}
+.last1{
+    padding-bottom: 25px;
+}
+.footer2{
+    margin-top: 20px;
+    color: black;
+}
+.learn-more{
+    color: black;
+    font-size: 14px;
+    margin-right: 10px;
+}
+.top-section{
+    background: url('/tesla-img/lhd-performance-hero-desktop.jfif') no-repeat center center/cover;
+    height: 70vh; 
+}
+.text-section{
+    width:  71.61458333333333vw;
+    margin: auto;
+    color: white;
+}
+.space{
+    height: 45vh;
+}
+.text{
+    width: 300px;
+    padding:0 20px;
+    margin: 0 30px;
+    display: inline-block;
+    text-align: center;
+}
+.third-text{
+    padding: 0;
+}
+.text h4{
+    margin:auto;
+    padding: 0;
+    display: inline-block;
+    font-size: 28px;
+    line-height: 36px;
+}
+.text p{
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 500;
+}
+.bottom-section{
+    width:  70.61458333333333vw;
+    margin: auto;
+    margin-left: 20vw;
+    padding-top: 4vh;
+}
+.Performance{
+    display: inline-block;
+    text-align: left;
+}
+.Performance p{
+    font-size: 17px;
+    line-height: 17px;
+    color: #181b21;
+    font-weight: 0;
+}
+.Performance h4{
+    font-size: 28px;
+    line-height: 36px;
+    color: #181b21;
+    padding-bottom: 12px;
+}
+.last{
+    display:inline-block;
+    width: 79vh;
+    margin-left: 50px;
+    font-size: 14px;
+    line-height: 21px;
+    color: #393c41;
+    font-weight: 400;
+    text-align: left;
+}
+.arrow-up{
+    position: relative;
+    left: 97.5vw;
+    top: 2.2vh;
+    font-size: 18px;
+    font-weight: 0;
+}
+.arrow-up2{
+    position:absolute;
+    right: 2.2vw;
+    margin-top: 2.2vh;
+}
+.arrow-up2 a ,.arrow-up a{
+    color: black;
+}
